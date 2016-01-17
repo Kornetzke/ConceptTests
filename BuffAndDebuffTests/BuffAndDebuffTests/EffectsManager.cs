@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace BuffAndDebuffTests
 {
@@ -69,6 +72,7 @@ namespace BuffAndDebuffTests
                     if (effect.IsActive == false)
                         deleteList.Add(effect);
                 }
+                
             }
 
             foreach(Effect effect in deleteList)

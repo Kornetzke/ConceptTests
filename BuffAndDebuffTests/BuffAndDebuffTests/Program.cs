@@ -25,7 +25,6 @@ namespace BuffAndDebuffTests
             Console.WriteLine(player);
             Console.WriteLine("Player Health : " + player.Health);
 
-            //player.effectsManager.AddEffect(new Effect(ModifierStat.Health, ModifierType.Add, -50));
             Effect effect = new Effect(ModifierStat.Health, ModifierType.Mulitply, 1.01);
             player.effectsManager.AddEffect(effect);
 
@@ -43,17 +42,18 @@ namespace BuffAndDebuffTests
             Console.WriteLine("Player Health : " + player.Health);
 
             player.Update(1);
+            Console.WriteLine("Turn Completed");
 
             Console.WriteLine("Player Health : " + player.Health);
 
             player.Update(1);
+            Console.WriteLine("Turn Completed");
 
             Console.WriteLine("Player Health : " + player.Health);
 
             player.Update(1);
-            Console.WriteLine("Player Health : " + player.Health);
+            Console.WriteLine("Turn Completed");
 
-            player.Update(1);
 
             Console.WriteLine("Press Enter to Exit");
             Console.ReadKey();
