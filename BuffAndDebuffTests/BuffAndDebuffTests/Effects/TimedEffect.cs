@@ -1,17 +1,18 @@
-﻿using System;
+﻿using BuffAndDebuffTests.Characters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BuffAndDebuffTests
+namespace BuffAndDebuffTests.Effects
 {
-    public class TimedEffect : Effect
+    public abstract class TimedEffect : BaseEffect
     {
 
         public int Duration { get; private set; }
 
-        public TimedEffect(int duration, ModifierStat stat, ModifierType type, double value) : base(stat, type, value)
+        public TimedEffect(int duration, double modifierValue, CharacterBase owner) : base(modifierValue, owner)
         {
             Duration = duration;
         }
@@ -23,6 +24,6 @@ namespace BuffAndDebuffTests
             if (Duration <= 0)
                 IsActive = false;
         }
-
+        
     }
 }

@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Console.DomainModel
 {
-    class Program
+    public class User
     {
-        static void Main()
-        {
-
-
-        }
+        public string Name { get; set; }
     }
 }
-

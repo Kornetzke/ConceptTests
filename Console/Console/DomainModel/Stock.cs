@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Program.DomainModel
 {
-    class Program
+    public class Stock
     {
-        static void Main()
-        {
-
-
-        }
+        public string Name { get; set; }
+        public double Value { get; set; }
     }
 }
-
