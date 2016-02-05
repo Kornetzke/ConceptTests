@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MathHelper
 {
-    class Program
+    class Init
     {
         static void Main(string[] args)
         {

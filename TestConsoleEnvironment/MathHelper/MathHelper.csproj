@@ -47,7 +47,7 @@
     <Compile Include="Input\IUserIO.cs" />
     <Compile Include="MathProblems\AdditionProblem.cs" />
     <Compile Include="MathProblems\BaseProblem.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
