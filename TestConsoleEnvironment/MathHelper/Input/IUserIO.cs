@@ -4,16 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace MathHelper.Input
 {
-    class Program
+    public interface IUserIO
     {
-        static void Main()
-        {
-
-
-
-        }
+        T GetUserInput<T>();
+        void WriteToUser(string message);
     }
 }
-
