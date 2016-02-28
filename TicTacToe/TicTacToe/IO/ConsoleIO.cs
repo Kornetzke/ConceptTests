@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TicTacToe.Game
+namespace TicTacToe.Game.IO
 {
-    public class ConsoleIO
+    public class ConsoleIO : IUserIO
     {
         public void PrintToUser(string message)
         {
