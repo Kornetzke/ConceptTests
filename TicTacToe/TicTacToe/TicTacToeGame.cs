@@ -16,6 +16,7 @@ namespace TicTacToe.Game
     {
         private Markers[] board;
         public Markers[] Board { get { return board; } }
+        public Markers Turn { get { return firstPlayer ? Markers.X : Markers.O; } }
         private bool firstPlayer;
 
 
@@ -96,6 +97,7 @@ namespace TicTacToe.Game
             {
                 board[i] = Markers._;
             }
+            firstPlayer = true;
             
         }
     }
