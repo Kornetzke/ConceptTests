@@ -7,8 +7,8 @@
     <ProjectGuid>{F16B3DAE-D827-4F91-B249-93330EB3A8CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AirplaneSoundBits.Service</RootNamespace>
-    <AssemblyName>AirplaneSoundBits.Service</AssemblyName>
+    <RootNamespace>AirplaneSoundBites.Service</RootNamespace>
+    <AssemblyName>AirplaneSoundBites.Service</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

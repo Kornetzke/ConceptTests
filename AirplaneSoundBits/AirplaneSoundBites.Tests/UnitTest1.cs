@@ -8,11 +8,21 @@ namespace AirplaneSoundBites.Tests
     public class UnitTest1
     {
 
-        private AirplaneSoundBites
+        private AirplanePlayer player;
+
+        [TestInitialize]
+        public void Init()
+        {
+            player = new AirplanePlayer(@"C:\Users\Kyle\Desktop\Airplane");
+        }
 
         [TestMethod]
-        public void TestMethod1()
+        public void GetFileNames()
         {
+            string[] titles = player.AudioTitles;
+
+            Assert.IsTrue(titles.Length > 0);
+            
         }
     }
 }

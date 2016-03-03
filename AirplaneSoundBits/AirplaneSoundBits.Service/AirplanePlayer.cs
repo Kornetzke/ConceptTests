@@ -6,15 +6,15 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AirplaneSoundBits.Service
+namespace AirplaneSoundBites.Service
 {
     public class AirplanePlayer : SoundPlayer
     {
-        public string FolderPath { get; internal set; }
+        public string FolderPath { get; set; }
 
-        public string[] AudioTitles { get { return GetTitles(); } }
+        public string[] AudioTitles { get { return GetAllClipsCompleteFilePath(); } }
 
-        private string[] GetTitles()
+        private string[] GetAllClipsCompleteFilePath()
         {
             return Directory.GetFiles(FolderPath, "*.wav");
         }
@@ -22,6 +22,17 @@ namespace AirplaneSoundBits.Service
         public AirplanePlayer(string folderLocation)
         {
             this.FolderPath = folderLocation;
+        }
+
+        public void PlayerRandomClip()
+        {
+            Random random = new Random();
+            string[] allFileLocation = GetAllClipsCompleteFilePath();
+            int i = random.Next(0, allFileLocation.Length-1);
+
+            string filePath = allFileLocation[i];
+            this.SoundLocation = filePath;
+            this.Play();
         }
         
     }

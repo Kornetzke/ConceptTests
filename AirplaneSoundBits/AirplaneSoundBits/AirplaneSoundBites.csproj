@@ -7,8 +7,8 @@
     <ProjectGuid>{C946C98C-5B42-4B30-AAD5-AC4CA5CA48F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AirplaneSoundBits</RootNamespace>
-    <AssemblyName>AirplaneSoundBits</AssemblyName>
+    <RootNamespace>AirplaneSoundBites</RootNamespace>
+    <AssemblyName>AirplaneSoundBites</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AirplaneSoundBits.Service\AirplaneSoundBites.Service.csproj">
+      <Project>{f16b3dae-d827-4f91-b249-93330eb3a8cb}</Project>
+      <Name>AirplaneSoundBites.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
