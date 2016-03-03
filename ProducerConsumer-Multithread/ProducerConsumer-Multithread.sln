@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumer", "ProducerConsumer\ProducerConsumer.csproj", "{FE3295E7-0026-4953-BAA1-60EEDE351959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProducerConsumer.Test", "ProducerConsumer.Test\ProducerConsumer.Test.csproj", "{02BA98F3-DC40-4564-A2E2-E0A046764BB9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{4531A4EC-F08D-4D91-BFDE-540C9CE5D977}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{FE3295E7-0026-4953-BAA1-60EEDE351959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE3295E7-0026-4953-BAA1-60EEDE351959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE3295E7-0026-4953-BAA1-60EEDE351959}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02BA98F3-DC40-4564-A2E2-E0A046764BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02BA98F3-DC40-4564-A2E2-E0A046764BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02BA98F3-DC40-4564-A2E2-E0A046764BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02BA98F3-DC40-4564-A2E2-E0A046764BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4531A4EC-F08D-4D91-BFDE-540C9CE5D977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4531A4EC-F08D-4D91-BFDE-540C9CE5D977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4531A4EC-F08D-4D91-BFDE-540C9CE5D977}.Release|Any CPU.ActiveCfg = Release|Any CPU
