@@ -12,7 +12,7 @@ namespace BuffAndDebuffTests.Effects
 
         public int Duration { get; private set; }
 
-        public TimedEffect(int duration, double modifierValue, CharacterBase owner) : base(modifierValue, owner)
+        public TimedEffect(int duration, double modifierValue) : base(modifierValue)
         {
             Duration = duration;
         }

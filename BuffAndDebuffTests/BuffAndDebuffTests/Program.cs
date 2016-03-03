@@ -25,12 +25,13 @@ namespace BuffAndDebuffTests
 
             Console.WriteLine(player);
             Console.WriteLine("Player MaxHealth : " + player.MaxHealth);
-
-            BaseEffect effect = new MaxHealthAdditionEffect(10, player);
+            Console.WriteLine("Adding +10 health buff to player");
+            BaseEffect effect = new MaxHealthAdditionEffect(10);
             player.EffectsManager.AddEffect(effect);
 
             Console.WriteLine("Player MaxHealth : " + player.MaxHealth);
 
+            Console.WriteLine("Removing +10 health buff from player");
             player.EffectsManager.RemoveEffect(effect);
 
 

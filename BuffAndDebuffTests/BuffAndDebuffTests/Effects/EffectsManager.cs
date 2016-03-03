@@ -42,7 +42,7 @@ namespace BuffAndDebuffTests.Effects
             }
         }
 
-        public void DeleteInActiveEffects()
+        public void DeleteInactiveEffects()
         {
             IEnumerable<BaseEffect> inActiveList = _effectList.Where(e => e.IsActive == false);
             foreach(BaseEffect effect in inActiveList)

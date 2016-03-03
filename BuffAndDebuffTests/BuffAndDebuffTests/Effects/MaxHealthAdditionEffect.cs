@@ -10,7 +10,7 @@ namespace BuffAndDebuffTests.Effects
     public class MaxHealthAdditionEffect : BaseEffect
     {
 
-        public MaxHealthAdditionEffect(double modifierValue, CharacterBase owner) : base(modifierValue, owner)
+        public MaxHealthAdditionEffect(double modifierValue) : base(modifierValue)
         {
 
         }
