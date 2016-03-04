@@ -10,6 +10,7 @@ namespace AirplaneSoundBites.Service
 {
     public class AirplanePlayer : SoundPlayer
     {
+
         public string FolderPath { get; set; }
 
         public string[] AudioTitles { get { return GetAllClipsCompleteFilePath(); } }
@@ -23,8 +24,9 @@ namespace AirplaneSoundBites.Service
         {
             this.FolderPath = folderLocation;
         }
+        
 
-        public void PlayerRandomClip()
+        public void PlayRandomClip()
         {
             Random random = new Random();
             string[] allFileLocation = GetAllClipsCompleteFilePath();

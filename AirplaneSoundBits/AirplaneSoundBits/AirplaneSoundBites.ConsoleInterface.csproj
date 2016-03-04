@@ -7,8 +7,8 @@
     <ProjectGuid>{C946C98C-5B42-4B30-AAD5-AC4CA5CA48F7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AirplaneSoundBites</RootNamespace>
-    <AssemblyName>AirplaneSoundBites</AssemblyName>
+    <RootNamespace>AirplaneSoundBites.ConsoleInterface</RootNamespace>
+    <AssemblyName>AirplaneSoundBites.ConsoleInterface</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\AbstractCommand.cs" />
+    <Compile Include="Command\ListCommand.cs" />
+    <Compile Include="Command\PlayCommand.cs" />
+    <Compile Include="Command\PlayRandomCommand.cs" />
     <Compile Include="ConsoleRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
