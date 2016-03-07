@@ -12,7 +12,8 @@ namespace AirplaneSoundBites.ConsoleInterface
     {
         static void Main(string[] args)
         {
-            AirplanePlayer player = new AirplanePlayer(@"C:\Users\Kyle\Desktop\Airplane");
+            IClipRepository repo = new LocalClipDirectory(@"C:\Users\Kyle\Desktop\Airplane");
+            ClipPlayer player = new ClipPlayer(repo);
             AbstractCommand random = new PlayRandomCommand(player);
             AbstractCommand list = new ListCommand(player);
             AbstractCommand play = new PlayCommand(player);

@@ -10,12 +10,12 @@ namespace AirplaneSoundBites
 {
     public class ConsoleRunner
     {
-        private AirplanePlayer player;
+        private ClipPlayer player;
         private string command;
         private Dictionary<string, AbstractCommand> commandDictionary;
         private string prevCommand;
 
-        public ConsoleRunner(AirplanePlayer player)
+        public ConsoleRunner(ClipPlayer player)
         {
             this.player = player;
             //command = new StringBuilder();
@@ -33,7 +33,10 @@ namespace AirplaneSoundBites
             do
             {
                 command = Console.ReadLine();
-                ExecuteCommand(command);
+                if (command != String.Empty)
+                    ExecuteCommand(command);
+                else
+                    endInput = false;
             } while (endInput);
         }
 

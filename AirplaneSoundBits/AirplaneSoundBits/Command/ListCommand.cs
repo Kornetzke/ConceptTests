@@ -9,7 +9,7 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
 {
     public class ListCommand : AbstractCommand
     {
-        public ListCommand(AirplanePlayer player) : base(player)
+        public ListCommand(ClipPlayer player) : base(player)
         {
             CommandString = "list";
         }
@@ -17,7 +17,7 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
         public override void Execute(string[] args = null)
         {
             Console.WriteLine("Listing Titles");
-            foreach(string s in player.AudioTitles)
+            foreach(string s in player.GetClipNames())
             {
                 Console.WriteLine(s);
             }

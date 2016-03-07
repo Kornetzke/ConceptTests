@@ -10,7 +10,7 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
 {
     public class PlayCommand : AbstractCommand
     {
-        public PlayCommand(AirplanePlayer player) : base(player)
+        public PlayCommand(ClipPlayer player) : base(player)
         {
             this.CommandString = "play";
         }
@@ -22,26 +22,7 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
             }
             else {
                 string userClipChoice = args[0];
-                string[] matchingFullClipPath = player.AudioTitles.Where(t => t.Contains(userClipChoice)).ToArray();
-
-                if (matchingFullClipPath.Length == 0)
-                {
-                    Console.WriteLine("Clip not found");
-                }
-                else if (matchingFullClipPath.Length > 1)
-                {
-                    Console.WriteLine("Could not narrow down the clips to one, clips found");
-                    foreach (string s in matchingFullClipPath)
-                    {
-                        Console.WriteLine(s);
-                    }
-                }
-                else
-                {
-                    player.SoundLocation = matchingFullClipPath[0];
-                    player.Play();
-                    
-                }
+                player.PlayClip(userClipChoice);
             }
             
         }

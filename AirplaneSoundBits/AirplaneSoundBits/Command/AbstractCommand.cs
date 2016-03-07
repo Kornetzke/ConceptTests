@@ -9,10 +9,10 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
 {
     public abstract class AbstractCommand
     {
-        protected AirplanePlayer player;
+        protected ClipPlayer player;
         public string CommandString { get; protected set; }
 
-        public AbstractCommand(AirplanePlayer player)
+        public AbstractCommand(ClipPlayer player)
         {
             this.player = player;
         }

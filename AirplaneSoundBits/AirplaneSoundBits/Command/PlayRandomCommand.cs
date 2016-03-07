@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AirplaneSoundBites.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace AirplaneSoundBites.ConsoleInterface.Command
     public class PlayRandomCommand : AbstractCommand
     {
 
-        public PlayRandomCommand(AirplaneSoundBites.Service.AirplanePlayer player) : base(player)
+        public PlayRandomCommand(ClipPlayer player) : base(player)
         {
             this.CommandString = "playrandom";
         }

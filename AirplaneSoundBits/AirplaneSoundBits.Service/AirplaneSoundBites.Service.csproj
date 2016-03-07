@@ -40,9 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AirplanePlayer.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="IClipRepository.cs" />
+    <Compile Include="LocalClipDirectory.cs" />
+    <Compile Include="ClipPlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
